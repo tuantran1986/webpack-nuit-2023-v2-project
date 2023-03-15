@@ -1,4 +1,5 @@
 const path = require('path');
+const webpack = require('webpack');
 
 module.exports = {
     // "DAU VAO" = file INDEX.JS - thu muc SRC
@@ -32,5 +33,13 @@ module.exports = {
             }
 
         ]
-    }
+    },
+    plugins: [
+        new webpack.ProvidePlugin({
+            "$": "jquery",
+            "jQuery": "jquery",
+            "window.$": "jquery",
+            "window.jQuery": "jquery"
+        })
+    ]
 }

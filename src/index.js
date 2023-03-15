@@ -6,8 +6,15 @@ import App from './components/App/App';
 // import App from './App';
 // import registerServiceWorker from './registerServiceWorker';
 
+
+// NHÚNG JQUERY trước BOOTSTRAP
+// import 'jquery/dist/jquery.min.js';  // loi
+import 'jquery';     // ok
+
 // NHÚNG BOOTSTRAP
 import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.min.js';
+
 
 import { createStore, applyMiddleware } from 'redux';
 import appReducers from './reducers/index';

@@ -25,7 +25,12 @@ module.exports = {
                     'css-loader'
                 ],
                 test: /\.css$/
+            },
+            {
+                loader: 'file-loader',
+                test: /\.jpe?g$|\.gif$|\.png$|\.svg$|\.woff$|\.woff2$|\.eot$|\.ttf$|\.wav$|\.mp3$|\.ico$/ 
             }
+
         ]
     }
 }

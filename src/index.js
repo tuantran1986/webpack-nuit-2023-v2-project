@@ -6,6 +6,9 @@ import App from './components/App/App';
 // import App from './App';
 // import registerServiceWorker from './registerServiceWorker';
 
+// NHÚNG BOOTSTRAP
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 import { createStore, applyMiddleware } from 'redux';
 import appReducers from './reducers/index';
 import { Provider } from 'react-redux';
